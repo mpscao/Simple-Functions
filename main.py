@@ -12,15 +12,9 @@ import math
 # this function does not have a print statement.
 def double(num: float) -> float:
 
-    """Return twice the value of num.
-    >>> double(7.0)
-    14.0
-    >>> double(5.7)
-    11.4
-    """
+ 
     dub = num * 2 # double the number entered
     return dub
-    pass
 
 
 # Task 2
@@ -28,33 +22,22 @@ def double(num: float) -> float:
 # Complete the function.
 def our_maximum(num1: float, num2: float) -> float:
 
-    """Return the larger of num1 and num2.
-    >>> our_maximum(1.5, 2.5)
-    2.5
-    >>> our_maximum(4.0, 3.7)
-    4.0
-    """
+ 
     maximum = max(num1, num2) # find maxximum of two numbers
     return maximum
-    pass
+  
 
 
 # Task 3
 # Complete the following function.
 def max_of_min(num1: float, num2: float, value1: float, value2: float) -> float:
 
-    """Return the maximum of the minimums of the pairs num1 and num2,
-    and value1 and value2.
-    >>> max_of_min(4.0, 3.7, 6.0,3.5)
-    3.7
-    >>> max_of_min(1, 1.7, 4.5, 3.0)
-    3.0
-    """
+  
     min1 = min(num1, num2) # find the minimum of the first two numbers entered
     min2 = min(value1, value2) # find minimum of next two numbers entered
     maxi_of_mini = max(min1, min2) # find maximum of the two minimums found
     return maxi_of_mini
-    pass
+
 
 
 # Task 4
@@ -80,7 +63,7 @@ def circle_area(radius: float) -> float:
 
     area = (math.pi * (radius ** 2)) # area of circle is pi times (radius squared),
     return area
-    pass
+
 
 
 # Task 6
@@ -95,7 +78,7 @@ def sum_to(n: int) -> int:
     for i in range(n + 1):
         sum += i # add the integer each time to the sum
     return sum
-    pass
+
 
 
 # Task 7
@@ -110,7 +93,7 @@ def is_odd(n: int) -> bool:
     # else if the integer is even return false
     elif(n % 2 == 0):
         return False
-    pass
+
 
 
 # Task 8
@@ -124,7 +107,7 @@ def is_even(n: int) -> bool:
     # else if the integer is odd return false
     elif (n % 2 == 1):
         return False
-    pass
+
 
 
 # Complete calling
@@ -160,9 +143,7 @@ def main():
     rad = input("Please enter a value for radius: ") # to set a variable for radius of circle
     print(circle_area(float(rad))) # to print the area of circle using the inputted radius
     input("Press any key to continue...\n")
-    # Task 9
-    # provide the code for calling function circle_area
-
+   
 
     print("Starting task 6, finding Summation of n.")
     to_sum_up_to = input("Please enter the number you'd like to sum up to: ")
@@ -178,8 +159,7 @@ def main():
     user_even = input("Please enter the number you'd like to check: ") # to set variable for number we're looking at
     print("It is", is_even(float(user_even)), "that", user_even, "is even.") # to print if number inputted is even
     input("Press any key to end...\n")
-    # Task 10
-    # provide the code for calling function is_even
+
 
 
 # Do not change
