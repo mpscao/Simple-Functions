@@ -1,35 +1,28 @@
-# NAME: Darren Cao
-# ID: 2489322953
-# DATE: 2022-09-05
-# DESCRIPTION: <Code that will perform 8 tasks using user-created functions.>
 
 import math
 
 
-# Task 1
-# Complete function double so that it takes a number and returns twice its value
-# according to the examples in the docstring. Use a return statement; note that
-# this function does not have a print statement.
+
+# Function double takes a number and returns twice its value
 def double(num: float) -> float:
 
  
-    dub = num * 2 # double the number entered
+    dub = num * 2 
     return dub
 
 
-# Task 2
+
 # Function our_maximum takes two numbers and returns the larger of the two.
-# Complete the function.
 def our_maximum(num1: float, num2: float) -> float:
 
  
-    maximum = max(num1, num2) # find maxximum of two numbers
+    maximum = max(num1, num2)
     return maximum
   
 
 
-# Task 3
-# Complete the following function.
+
+# Function max_of_min finds minimum of two sets two numbers and finds the maximum of the minimum
 def max_of_min(num1: float, num2: float, value1: float, value2: float) -> float:
 
   
@@ -40,25 +33,19 @@ def max_of_min(num1: float, num2: float, value1: float, value2: float) -> float:
 
 
 
-# Task 4
 # Function format_name receives two parameters.
 # The first parameter represents a first name and the second represents a last name.
 # It returns a string in the format: last_name, first_name
 # where last_name and first_name are replaced by the given last and first names.
 def format_name(first_name: str, last_name: str) -> str:
-    """ Return a string in format last_name, first_name.
-    >>> format_name('John', 'Smith')
-    'Smith, John'
-    """
-    name = (last_name + ", " + first_name) # string that starts with last name then ',', then first name
+
+    name = (last_name + ", " + first_name)
     return name
     pass
 
 
-# Task 5
-# Complete the following function circle_area.
-# It receives the radius and returns the area of the circle.
-# Add proper comments.
+
+# Function circle_area receives the radius and returns the area of the circle.
 def circle_area(radius: float) -> float:
 
     area = (math.pi * (radius ** 2)) # area of circle is pi times (radius squared),
@@ -66,12 +53,10 @@ def circle_area(radius: float) -> float:
 
 
 
-# Task 6
+
 # Function sum_to receives one parameter
 # the parameter is a number
 # returns an integer value: the sum of all integers from 1 to that number
-# Add proper comments.
-
 def sum_to(n: int) -> int:
     sum = 0 # set sum initially to 0 so sum is an int that can be initially added to 1
     # for loop that iterates from 1 to n
@@ -81,8 +66,8 @@ def sum_to(n: int) -> int:
 
 
 
-# Task 7
-# Complete function is_odd which receives one parameter.
+
+# Function is_odd receives one parameter.
 # the parameter is a number.
 # returns a boolean value True if the number is odd and False otherwise.
 # Add proper comments.
@@ -96,8 +81,8 @@ def is_odd(n: int) -> bool:
 
 
 
-# Task 8
-# Complete function is_even which receives one parameter.
+
+# Function is_even receives one parameter.
 # the parameter is a number.
 # returns a boolean value True if the number is even and False otherwise.
 def is_even(n: int) -> bool:
@@ -110,7 +95,7 @@ def is_even(n: int) -> bool:
 
 
 
-# Complete calling
+
 def main():
     print("Starting task 1, doubling a number.")
     num_to_double = input("Please enter the number you would like to duplicate: ")
@@ -140,8 +125,8 @@ def main():
     input("Press any key to continue...\n")
 
     print("Starting task 5, finding area of circle.")
-    rad = input("Please enter a value for radius: ") # to set a variable for radius of circle
-    print(circle_area(float(rad))) # to print the area of circle using the inputted radius
+    rad = input("Please enter a value for radius: ") 
+    print(circle_area(float(rad))) 
     input("Press any key to continue...\n")
    
 
@@ -156,8 +141,8 @@ def main():
     input("Press any key to continue...\n")
 
     print("Starting task 8 checking even:")
-    user_even = input("Please enter the number you'd like to check: ") # to set variable for number we're looking at
-    print("It is", is_even(float(user_even)), "that", user_even, "is even.") # to print if number inputted is even
+    user_even = input("Please enter the number you'd like to check: ") 
+    print("It is", is_even(float(user_even)), "that", user_even, "is even.") 
     input("Press any key to end...\n")
 
 
